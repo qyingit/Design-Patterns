@@ -1,0 +1,14 @@
+装饰器模式
+动态的将新功能附加到对象身上,在对象功能扩展方面,比类继承更有弹性,
+装饰器模式体现了开闭原则
+原理：
+1. 装饰器模式就像打包一个快递
+2. Componment主体,比如类似前面的Drink
+3. ConcreteComponent和Decorator
+4. Decorator:装饰器 比如各个调料
+
+jdk源码
+inputStream是抽象类,类似于Drink
+FileInputStream是inputStream子类，类似于Decaf
+FilterInputStream是Inputstream子类,类似于Decorator修饰者
+DataInputStream是FilterInputStream子类，具体的修饰这类似Milk
